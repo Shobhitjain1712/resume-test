@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Tailor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Spectral:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/frontend/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">AI Resume Tailor</p>
+          <h1>Make your resume fit the job in minutes.</h1>
+          <p class="lede">
+            Paste the job description, tune your profile once, and let the system process it.
+          </p>
+        </div>
+        <div class="status-card" id="status-card">
+          <h2>Ready to generate</h2>
+          <p>We keep your base info and tailor the rest for each role.</p>
+        </div>
+      </section>
+
+      <section class="builder">
+        <form id="resume-form">
+          <label>
+            Job title
+            <input type="text" id="job-title" placeholder="Backend Engineer - GenAI" required />
+          </label>
+          <label>
+            Job description
+            <textarea
+              id="job-description"
+              placeholder="Paste the full job description here..."
+              rows="10"
+              required
+            ></textarea>
+          </label>
+          <button type="submit" id="generate-btn">Generate resume</button>
+        </form>
+        <div class="result" id="result">
+          <h3>Next step</h3>
+          <p>Submit a job description to start processing.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="/frontend/app.js"></script>
+  </body>
+</html>
